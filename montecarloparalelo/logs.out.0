@@ -1,0 +1,176 @@
+--------------------------------------------------------------------------
+WARNING: Open MPI will create a shared memory backing file in a
+directory that appears to be mounted on a network filesystem.
+Creating the shared memory backup file on a network file system, such
+as NFS or Lustre is not recommended -- it may cause excessive network
+traffic to your file servers and/or cause shared memory traffic in
+Open MPI to be much slower than expected.
+
+You may want to check what the typical temporary directory is on your
+node.  Possible sources of the location of this temporary directory
+include the $TEMPDIR, $TEMP, and $TMP environment variables.
+
+Note, too, that system administrators can set a list of filesystems
+where Open MPI is disallowed from creating temporary files by setting
+the MCA parameter "orte_no_session_dir".
+
+  Local host: r1i1n0
+  Filename:   /tmp/openmpi-sessions-machado@r1i1n0_0/15595/1/shared_mem_pool.r1i1n0
+
+You can set the MCA paramter shmem_mmap_enable_nfs_warning to 0 to
+disable this message.
+--------------------------------------------------------------------------
+  Process 96 is active.
+  Process 64 is active.
+  Process 98 is active.
+  Process 66 is active.
+  Process 50 is active.
+  Process 48 is active.
+  Process 104 is active.
+  Process 106 is active.
+  Process 56 is active.
+  Process 58 is active.
+  Process 102 is active.
+  Process 70 is active.
+  Process 54 is active.
+  Process 100 is active.
+  Process 68 is active.
+  Process 105 is active.
+  Process 97 is active.
+  Process 57 is active.
+  Process 65 is active.
+  Process 52 is active.
+  Process 99 is active.
+  Process 60 is active.
+  Process 49 is active.
+  Process 67 is active.
+  Process 62 is active.
+  Process 32 is active.
+05 March 2018 12:33:35 PM
+
+MONTE_CARLO - Master process:
+  C version
+  An MPI example program.
+  Estimate pi by the Monte Carlo method, using MPI.
+
+  Compiled on Feb  8 2018 at 16:12:34.
+
+  The number of processes is 108.
+
+  Points in the unit square will be tested
+  to see if they lie in the unit quarter circle.
+
+  The method will continue to improve the estimate until:
+  PI is computed to within a tolerance = 0.000100,
+  or the number of points examined reaches 1000000.
+  Process 0 is active.
+  Process 34 is active.
+  Process 2 is active.
+  Process 24 is active.
+  Process 18 is active.
+  Process 40 is active.
+  Process 16 is active.
+  Process 42 is active.
+  Process 8 is active.
+  Process 26 is active.
+  Process 10 is active.
+  Process 38 is active.
+  Process 6 is active.
+  Process 36 is active.
+  Process 22 is active.
+  Process 25 is active.
+  Process 4 is active.
+  Process 33 is active.
+  Process 9 is active.
+  Process 41 is active.
+  Process 1 is active.
+  Process 35 is active.
+  Process 20 is active.
+  Process 28 is active.
+  Process 17 is active.
+  Process 44 is active.
+  Process 3 is active.
+  Process 46 is active.
+  Process 14 is active.
+  Process 30 is active.
+  Process 12 is active.
+  Process 82 is active.
+  Process 80 is active.
+  Process 88 is active.
+  Process 72 is active.
+  Process 74 is active.
+  Process 90 is active.
+  Process 86 is active.
+  Process 73 is active.
+  Process 89 is active.
+  Process 78 is active.
+  Process 81 is active.
+  Process 84 is active.
+  Process 92 is active.
+  Process 94 is active.
+  Process 76 is active.
+  Process 79 is active.
+  Process 39 is active.
+  Process 7 is active.
+  Process 95 is active.
+  Process 47 is active.
+  Process 15 is active.
+  Process 31 is active.
+  Process 75 is active.
+  Process 103 is active.
+  Process 91 is active.
+  Process 27 is active.
+  Process 71 is active.
+  Process 63 is active.
+  Process 11 is active.
+  Process 77 is active.
+  Process 43 is active.
+  Process 59 is active.
+  Process 45 is active.
+  Process 107 is active.
+  Process 55 is active.
+  Process 83 is active.
+  Process 19 is active.
+  Process 51 is active.
+  Process 85 is active.
+  Process 21 is active.
+  Process 37 is active.
+  Process 5 is active.
+  Process 93 is active.
+  Process 29 is active.
+  Process 13 is active.
+  Process 101 is active.
+  Process 53 is active.
+  Process 69 is active.
+  Process 61 is active.
+  Process 87 is active.
+  Process 23 is active.
+pi =  3.14616822429906539682
+pi =  3.15065420560747666556
+pi =  3.14514641744548306690
+pi =  3.14551401869158864244
+pi =  3.14465794392523356748
+pi =  3.14315264797507776251
+pi =  3.14441655540720965689
+pi =  3.14478504672897196670
+pi =  3.14390861889927331063
+pi =  3.14277383177570079908
+pi =  3.14342225998300772716
+pi =  3.14372585669781923201
+pi =  3.14431631919482379445
+pi =  3.14413351134846452695
+pi =  3.14443364485981291523
+pi =  3.14441588785046732824
+pi =  3.14432985156679478678
+pi =  3.14387954309449657586
+pi =  3.14344515494343346163
+
+points: 1016500
+in: 798828, out: 217672
+
+  Elapsed wallclock time = 1.85206 seconds.
+
+MONTE_CARLO - Master process:
+  Normal end of execution.
+
+05 March 2018 12:33:37 PM

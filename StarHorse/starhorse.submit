@@ -1,0 +1,20 @@
+getenv = True
+universe = vanilla
+executable = $ENV(HOME)/../adriano.pieres/bpg_distances/run_starhorse.py 
+arguments = /mnt/scratch/starhorse/GALAH_PARAMS_$(Process)
+
+error = .condor/starhorse-$(Process).err
+output = .condor/starhorse-$(Process).out
+log = .condor/starhorse-$(Process).log
+
+rank = (machine == "r1i0n0.ib0.smc.linea") 
+queue
+
+rank = (machine == "r1i0n1.ib0.smc.linea") 
+queue
+
+rank = (machine == "r1i1n0.ib0.smc.linea") 
+queue
+
+rank = (machine == "r1i1n1.ib0.smc.linea")
+queue
